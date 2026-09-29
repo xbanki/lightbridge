@@ -17,7 +17,7 @@ Rectangle {
         text: Qt.formatDateTime(DateTime.value, "dddd, d. MMMM")
         anchors.horizontalCenter: root.horizontalCenter
         anchors.verticalCenter: root.verticalCenter
-        color: "white"
+        color: ShellTheme.colorTextPrimary
         id: label
     }
 }

@@ -3,8 +3,27 @@
 
 import QtQuick
 import Quickshell
+import QtQuick.Layouts
 
 import "../widgets"
 
 ToolbarSkeleton {
+    id: root
+
+    mask: Region {
+        Region { item: clock }
+    }
+
+    Item {
+        anchors.fill: parent
+        id: panel
+
+        RowLayout {
+            anchors.verticalCenter: panel.verticalCenter
+            anchors.right: panel.right
+            spacing: 4
+
+            Clock { id: clock }
+        }
+    }
 }

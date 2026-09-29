@@ -6,4 +6,5 @@ import Quickshell
 
 import "../widgets"
 
-ToolbarSkeleton { }
+ToolbarSkeleton {
+}

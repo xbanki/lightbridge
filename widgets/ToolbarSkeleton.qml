@@ -10,4 +10,13 @@ PanelWindow {
         left: true
         top: true
     }
+
+    margins {
+        right: 8
+        left: 8
+        top: 8
+    }
+
+    color: "transparent"
+    implicitHeight: 24
 }

@@ -19,6 +19,7 @@ Variants {
             active: ShellProperties.isPrimaryMonitor(modelData)
             ToolbarPrimary { screen: modelData }
         }
+
         LazyLoader {
             active: !ShellProperties.isPrimaryMonitor(modelData)
             ToolbarSecondary { screen: modelData }

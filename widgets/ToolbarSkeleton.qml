@@ -4,10 +4,10 @@
 import QtQuick
 import Quickshell
 
-import "components"
-
-ShellRoot {
-    id: root
-
-    Toolbar { }
+PanelWindow {
+    anchors {
+        right: true
+        left: true
+        top: true
+    }
 }

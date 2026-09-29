@@ -4,10 +4,6 @@
 import QtQuick
 import Quickshell
 
-import "components"
+import "../widgets"
 
-ShellRoot {
-    id: root
-
-    Toolbar { }
-}
+ToolbarSkeleton { }

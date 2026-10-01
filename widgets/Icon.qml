@@ -7,5 +7,9 @@ import QtQuick.Controls.impl
 IconImage {
     required property string icon
 
+    property real size: 18
+
     source: "file://" + Quickshell.shellDir + "/icons/" + icon + ".svg"
+    height: size
+    width: size
 }

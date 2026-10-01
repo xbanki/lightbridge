@@ -13,11 +13,19 @@ ToolbarSkeleton {
     mask: Region {
         Region { item: clock }
         Region { item: calendar }
+        Region { item: controlcenter }
     }
 
     Item {
         anchors.fill: parent
         id: panel
+        RowLayout {
+            anchors.verticalCenter: panel.verticalCenter
+            anchors.left: panel.left
+            spacing: 4
+
+            ControlCenter { id: controlcenter }
+        }
 
         RowLayout {
             anchors.verticalCenter: panel.verticalCenter

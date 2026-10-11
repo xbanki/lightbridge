@@ -4,6 +4,7 @@
 import QtQuick
 import Quickshell
 
+import "../modules"
 import "../widgets"
 
 Rectangle {
@@ -17,7 +18,7 @@ Rectangle {
     Icon {
         anchors.horizontalCenter: root.horizontalCenter
         anchors.verticalCenter: root.verticalCenter
-        color: "white"
+        color: ShellTheme.colorTextPrimary
         icon: "menu"
     }
 }

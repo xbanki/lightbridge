@@ -13,6 +13,7 @@ ToolbarSkeleton {
     mask: Region {
         Region { item: clock }
         Region { item: calendar }
+        Region { item: appdrawer }
         Region { item: controlcenter }
     }
 
@@ -25,6 +26,7 @@ ToolbarSkeleton {
             spacing: 4
 
             ControlCenter { id: controlcenter }
+            AppDrawer { id: appdrawer }
         }
 
         RowLayout {

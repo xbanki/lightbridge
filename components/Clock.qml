@@ -19,7 +19,7 @@ Squircle {
         text: Qt.formatDateTime(DateTime.value, "hh:mm AP")
         anchors.horizontalCenter: root.horizontalCenter
         anchors.verticalCenter: root.verticalCenter
-        color: ShellTheme.colorTextPrimary
+        color: ShellTheme.colors.surface._200
         id: label
     }
 }

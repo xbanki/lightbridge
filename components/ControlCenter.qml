@@ -18,7 +18,7 @@ Squircle {
     Icon {
         anchors.horizontalCenter: root.horizontalCenter
         anchors.verticalCenter: root.verticalCenter
-        color: ShellTheme.colorTextPrimary
+        color: ShellTheme.colors.surface._200
         icon: "menu"
     }
 }

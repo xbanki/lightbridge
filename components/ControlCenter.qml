@@ -7,13 +7,13 @@ import Quickshell
 import "../modules"
 import "../widgets"
 
-Rectangle {
+Squircle {
     id: root
 
     color: "transparent"
+    rounding: 4
     height: 24
     width: 24
-    radius: 4
 
     Icon {
         anchors.horizontalCenter: root.horizontalCenter

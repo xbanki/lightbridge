@@ -5,13 +5,15 @@ import QtQuick
 import Quickshell
 
 import "../modules"
+import "../widgets"
 
-Rectangle {
+Squircle {
+    id: root
+
     implicitWidth: label.implicitWidth + 12
     color: "transparent"
     implicitHeight: 24
-    radius: 4
-    id: root
+    rounding: 4
 
     Text {
         text: Qt.formatDateTime(DateTime.value, "dddd, d. MMMM")

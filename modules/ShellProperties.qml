@@ -9,7 +9,8 @@ import Quickshell.Io
 Singleton {
     id: root
 
-    property alias primaryMonitorConnector: properties.primaryMonitorConnector
+    readonly property alias primaryMonitorConnector: properties.primaryMonitorConnector
+    readonly property string namespace: "lightbridge"
 
     property bool ready: false
 
@@ -19,13 +20,13 @@ Singleton {
         let found = false
         for (let i = 0; i < Quickshell.screens.length; i++) {
             const screen = Quickshell.screens[i]
-            if (this.primaryMonitorConnector.length == 0) {
-                this.primaryMonitorConnector = screen.name
+            if (properties.primaryMonitorConnector.length == 0) {
+                properties.primaryMonitorConnector = screen.name
                 found = true
                 break
             }
 
-            if (this.primaryMonitorConnector == screen.name) {
+            if (properties.primaryMonitorConnector == screen.name) {
                 found = true
                 break
             }
@@ -33,7 +34,7 @@ Singleton {
 
         if (!found) this.primaryMonitorConnector = Quickshell.screens[0].name
 
-        return monitor.name == this.primaryMonitorConnector
+        return monitor.name == properties.primaryMonitorConnector
     }
 
     Process {

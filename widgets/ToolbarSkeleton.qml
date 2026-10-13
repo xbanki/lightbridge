@@ -3,8 +3,13 @@
 
 import QtQuick
 import Quickshell
+import Quickshell.Wayland
+
+import "../modules"
 
 PanelWindow {
+    WlrLayershell.namespace: ShellProperties.namespace
+
     anchors {
         right: true
         left: true

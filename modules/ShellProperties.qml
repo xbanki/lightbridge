@@ -32,7 +32,7 @@ Singleton {
             }
         }
 
-        if (!found) this.primaryMonitorConnector = Quickshell.screens[0].name
+        if (!found) properties.primaryMonitorConnector = Quickshell.screens[0].name
 
         return monitor.name == properties.primaryMonitorConnector
     }

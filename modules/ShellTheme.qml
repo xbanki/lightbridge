@@ -8,4 +8,5 @@ import Quickshell
 
 Singleton {
     readonly property ShellThemeColors colors: ShellThemeColors
+    readonly property ShellThemeSizes sizes: ShellThemeSizes
 }
